@@ -1,0 +1,50 @@
+<h1>Cadastro</h1>
+
+<form [formGroup]='form'>
+   
+    <mat-form-field>
+        <mat-label>username</mat-label>
+        <input matInput placeholder="username" formControlName="username">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>firstName</mat-label>
+        <input matInput placeholder="firstName" formControlName="firstName">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>lastName</mat-label>
+        <input matInput placeholder="lastName" formControlName="lastName">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input  matInput placeholder="lastName" formControlName="email">
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-label>password</mat-label>
+        <input  matInput placeholder="password" formControlName="password">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>phone</mat-label>
+        <input matInput placeholder="phone" formControlName="phone">
+    </mat-form-field>   
+   
+
+    
+    
+      
+    <!-- <input placeholder="username" [(ngModel)="usuario.username">
+    <input placeholder="firstName" [(ngModel)="usuario.firstName">
+    <input placeholder="lastName" [(ngModel)="usuario.lastName">
+    <input placeholder="email" [(ngModel)="usuario.email">
+    <input placeholder="password" [(ngModel)="usuario.password">
+    <input placeholder="phone" [(ngModel)="usuario.phone">
+    <input placeholder="userStatus" [(ngModel)="usuario.userStatus"> -->
+
+
+    <button mat-button color="accent"(click)="registrar()">Registrar</button>
+</form>
+<!-- {{usuario | json}} -->
